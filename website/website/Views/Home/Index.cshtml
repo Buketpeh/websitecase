@@ -1,0 +1,28 @@
+﻿
+@using website.Models
+@model List<Personnel>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+
+<table id="tbl1" class="table table-bordered">
+    <thead>
+        <tr>
+            <th>FirstName</th>
+            <th>LastName</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var personel in Model)
+        {
+            <tr>
+                <th>@personel.firstame</th>
+                <td>@personel.lastname</td>
+               
+
+            </tr>
+        }
+    </tbody>
+</table>
